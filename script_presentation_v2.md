@@ -71,12 +71,12 @@ Je repasse la parole à Adnane pour conclure.
 ## 🎤 ADNANE — Conclusion
 *Environ 30 secondes*
 
-Pour finir, quelques limites à garder en tête, par ordre d'importance. La plus critique : il n'y a **aucune information sur la saisonnalité** — les effets des fêtes et des périodes de vacances sont complètement absents du dataset, alors qu'ils expliquent probablement une large part de la variabilité résiduelle. Ensuite, les données sont limitées aux vols indiens — on ne peut pas transposer directement à d'autres marchés. Enfin, on prédit une **tendance médiane** — pas le prix exact de votre billet. On a choisi la médiane et non la moyenne justement pour être robuste à ces quelques billets très chers qui tirent la distribution vers le haut.
-
-Des pistes d'amélioration : des splines ou du LOESS pour plus de flexibilité dans la forme de la courbe, intégrer la saisonnalité, ou du Random Forest pour capturer les interactions non-linéaires entre compagnie, classe et fenêtre de réservation.
-
-Mais le message clé qu'on retient : **à partir de J-7, chaque jour d'attente vous coûte significativement plus cher**. Notre modèle a la réponse. Merci.
-
+"Pour conclure, quelques points importants sur les limites de notre analyse.
+D'abord, on s'est volontairement limités à des cas très spécifiques : une seule ville de départ, trois destinations, et des vols avec au maximum une escale. Ce choix était nécessaire pour avoir une analyse propre et comparable.
+Ensuite, nos résultats ne sont pas généralisables aux vols internationaux. Sur ces routes, le prix dépend de facteurs qu'on ne peut pas modéliser facilement — les tensions géopolitiques, les crises, les fermetures d'espaces aériens. Ce sont des événements imprévisibles par nature.
+Notre modèle ne capture pas non plus la saisonnalité — les fêtes, les vacances scolaires, les pics de demande. Et il prédit une tendance médiane : pas le prix exact d'un billet précis.
+Pour améliorer ça, on pourrait utiliser des modèles non-paramétriques comme les splines ou le Random Forest, et intégrer des données temporelles.
+Et pour finir, la conclusion la plus concrète de notre analyse : si vous êtes dans les 10 derniers jours avant votre départ, n'attendez pas. La courbe devient trop volatile, les prix peuvent exploser du jour au lendemain. Le modèle le confirme : dans cette zone, chaque jour d'attente est un risque. Achetez dès que vous trouvez un prix acceptable."
 ---
 
 *Durée estimée : ~5 min à 130 mots/minute (environ 750 mots)*
