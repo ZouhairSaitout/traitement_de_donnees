@@ -3,7 +3,7 @@
 
 ---
 
-## 🎤 ÉLOÏSE — Introduction, Objectif, Description des données
+## ÉLOÏSE — Introduction, Objectif, Description des données
 *Environ 1 min 30*
 
 Bonjour à tous. Imaginez : vous hésitez à acheter un billet d'avion — est-ce que vous achetez maintenant, ou vous attendez deux jours en espérant que le prix baisse ?
@@ -22,10 +22,10 @@ Je passe la parole à Adnane pour les features.
 
 ---
 
-## 🎤 ADNANE — Handcrafted Features
+## ADNANE — Handcrafted Features
 *Environ 1 min 15*
 
-Merci Éloïse. Avant de modéliser quoi que ce soit, on a construit des variables à la main — et chacune répond à un problème précis.
+Avant de modéliser quoi que ce soit, on a construit des variables à la main — et chacune répond à un problème précis.
 
 La première, c'est la **fenêtre de réservation** : on découpe les données en quatre périodes — dernière minute, court terme, moyen terme, et anticipé. C'est surtout utile pour visualiser comment les prix se distribuent selon la période de réservation.
 
@@ -39,10 +39,10 @@ Et enfin les **hinge features** — ce sont elles qui constituent le cœur du mo
 
 ---
 
-## 🎤 ZOUHAIR — Régression
+## ZOUHAIR — Régression
 *Environ 1 min 45*
 
-Merci Adnane. Pourquoi une régression linéaire classique ne marche pas ici ? Parce que le prix ne diminue pas de manière uniforme. Longtemps à l'avance, les prix sont quasi-stables. Puis ils explosent dans les derniers jours. Une droite ne peut pas modéliser ça.
+Pourquoi une régression linéaire classique ne marche pas ici ? Parce que le prix ne diminue pas de manière uniforme. Longtemps à l'avance, les prix sont quasi-stables. Puis ils explosent dans les derniers jours. Une droite ne peut pas modéliser ça.
 
 On a comparé trois approches. *[pointer le graphique comparaison]* La **régression linéaire simple** donne un R² autour de 0.66 — insuffisant, elle rate complètement la non-linéarité. La **régression polynomiale de degré 2** monte à 0.85-0.91 — c'est mieux, mais elle est trop lisse : elle ne capture pas les changements de dynamique que les données montrent clairement.
 
@@ -54,11 +54,10 @@ Ces trois seuils ne sont pas arbitraires — ce sont les paliers qu'on observe v
 
 *[pointer piecewise_economy]* Résultat : R² entre 0.89 et 0.97 selon la destination. Le modèle suit à la fois la tendance de fond — les prix stables longtemps à l'avance — et les accélérations brutales en fin de fenêtre.
 
-Je repasse la parole à Adnane pour conclure.
 
 ---
 
-## 🎤 ADNANE — Conclusion
+## ADNANE — Conclusion
 *Environ 30 secondes*
 
 Pour finir, quelques limites à garder en tête. Les données sont limitées aux vols indiens — on ne peut pas transposer directement à d'autres marchés. Il n'y a pas d'information sur la saison — les effets des fêtes et des vacances sont absents. Et on prédit une **tendance médiane**, pas le prix exact de votre billet.
